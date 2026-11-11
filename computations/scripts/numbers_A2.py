@@ -1,4 +1,4 @@
-"""Numbers of Appendix C and Section VI of the paper, written to numbers_A2.json next to this script:
+"""Numbers of Appendices C and D of the paper, written to numbers_A2.json next to this script:
 (1) the parts of J(1.1648) in ball arithmetic (python-flint, 256 bits): R, j_a, j_b, j_c, the bracket and 2 Phibar(R);
 (2) the differences K - 0.4002 (A + beta/2)^(4/3) over all stored optima, with the ranges of A and K.
 Usage: python numbers_A2.py"""

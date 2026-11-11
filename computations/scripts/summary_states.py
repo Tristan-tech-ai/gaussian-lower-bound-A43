@@ -1,4 +1,4 @@
-"""Summary of the stored optima and of the count changes used in Section VI and Fig. 5 of the paper: the number of states
+"""Summary of the stored optima and of the count changes used in Appendix D and Fig. 4 of the paper: the number of states
 and their verdicts, the largest Kuhn-Tucker residual, the range of K - 0.4002 (A + beta/2)^(4/3), and the ratio of the counts to the
 proved bound. Reads count_law_data.json and every state file it lists; writes numbers_states.json next to this script.
 Usage: python summary_states.py"""

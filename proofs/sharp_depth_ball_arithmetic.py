@@ -1,14 +1,13 @@
-"""q1796_lower_bound_constants_arb.py (10 Oct 2026): ball-arithmetic evaluation of the only numerical input of the proof of Theorem 1
-(lower bound of order A^(4/3) for the capacity-achieving input on [-A, A]) and of the constants that follow from it.
+"""sharp_depth_ball_arithmetic.py: the computation of Appendix C of the paper (the sharp depth), in ball arithmetic.
 
-Written BEFORE the run (what the script must show; a reading, not a verdict script, no registration):
-  (1) J(1.1648) is a ball that lies entirely below 0 (the dossier floating-point value is -5.00107e-5);
+No step of the proof of Theorem 1 uses it; it gives the sharper constant 0.1660 in place of 3/20. It shows:
+  (1) J(1.1648) is a ball that lies entirely below 0;
   (2) J(1.1647) is a ball that lies entirely above 0, so the root of J lies between 1.1647 and 1.1648;
-  (3) with lambda1 = 1.1648, ell = exp(-lambda1), L1 = (1 - ell)/lambda1 = L(1, ell), rho = (e - 1)/L1, c0max = (4 rho)^(-1/3) and
-      kappa = sqrt(c0max)/4, the ball of kappa lies above 0.1660 (floating point: 0.166075).
+  (3) with lambda1 = 1.1648, ell = exp(-lambda1), L1 = (1 - ell)/lambda1, rho = (e - 1)/L1, c0max = (4 rho)^(-1/3) and
+      kappa = sqrt(c0max)/4 = (1/4)(4 rho)^(-1/6), the ball of kappa lies above 0.1660.
 J(lambda) = 2[-lambda ja + R jb - jc/2] + 2 Phibar(R), R = sqrt(2(1 + lambda)), ja = Phi(R) - 1/2, jb = phi(0) - phi(R), jc = ja - R phi(R).
-The monotonicity of J in lambda and the closed form are proved in the paper (Appendix A), not here.
-Usage: py q1796_lower_bound_constants_arb.py     (python-flint, 256 bits; reads and writes no file)
+This is the form of J in Appendix C written in other terms; proofs/check_hand_J2.py checks that the two forms agree.
+Usage: py sharp_depth_ball_arithmetic.py     (python-flint, 256 bits; reads and writes no file)
 """
 
 from flint import arb, ctx
@@ -69,4 +68,4 @@ print(
     % (2 * c0max ** (arb(3) / 2) * rho.sqrt()).str(15, radius=False)
 )
 ok = bool(j1 < 0) and bool(j0 > 0) and bool(kappa > arb("0.1660"))
-print("CHECK q1796: %s" % ("ALL THREE STATEMENTS HOLD" if ok else "NOT ALL STATEMENTS HOLD"))
+print("CHECK sharp_depth: %s" % ("ALL THREE STATEMENTS HOLD" if ok else "NOT ALL STATEMENTS HOLD"))

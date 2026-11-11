@@ -1,4 +1,4 @@
-"""Fig. 5 of the paper: the computed counts against the proved lower bound. Dots: the amplitudes A at which the computed
+"""Fig. 4 of the paper: the computed counts against the proved lower bound. Dots: the amplitudes A at which the computed
 number of mass points changes from K_b to K_b + 1, drawn at K = K_b + 1/2 on log-log axes. Solid line: 0.4002 (A + beta/2)^(4/3),
 with beta/2 from the same file. Dashed line: the asymptotic lower bound 0.1660 A^(4/3) of Theorem 1. Data: count_law_data.json.
 0.4002 = (3/2)(3/(16 pi^2))^(1/3) rounded to four digits; 0.1660 = (1/4)(4 rho_1)^(-1/6) cut to four digits.

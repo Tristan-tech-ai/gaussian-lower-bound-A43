@@ -1,4 +1,4 @@
-"""Fig. 4 of the paper: the idea of Theorem 2 on a window of a computed optimum. The window [-l, l] with l = 2 at the
+"""Fig. 2 of the paper: the idea of Theorem 2 on a window of a computed optimum. The window [-l, l] with l = 2 at the
 center of the optimum at A = 29.85 holds k = 4 mass points. Top: the mass points and the output density p. Bottom: the nonnegative
 trigonometric polynomial Q(theta) = prod_j 4 sin^2(omega0 (theta - x_j)/2), omega0 = pi/l, which vanishes at every mass point of
 the window, scaled to mean one. Prints the points, Q at the points, the ratio of int Q p to c* int Q, the relative L2 error eta of p on

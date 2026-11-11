@@ -1,6 +1,6 @@
-"""check_hand_J2.py (11 Nov 2026): numbers behind the hand argument for the bound p > exp(-2) c* (paper A, Lemma 2(c)).
+"""check_hand_J2.py: numbers behind the hand argument for the bound p > exp(-2) c* (Lemma 2(c) of the paper).
 
-Written BEFORE the run (what the script must show; a reading, not a verdict script, no registration):
+It shows:
   (1) the short form J(2) = -5/2 + 2 sqrt(6) phi(0) + 7 Phibar(sqrt 6) - sqrt(6) phi(sqrt 6) agrees with the form of the paper,
       J = 2[-lambda ja + R jb - jc/2] + 2 Phibar(R), and with a direct quadrature of 2 int_0^inf phi(u) G_2(u) du;
   (2) J(2) <= -5/2 + 2 sqrt(3/pi) + exp(-3)/sqrt(12 pi) < -5/2 + 2 + 1/6 < 0 (the hand inequalities);

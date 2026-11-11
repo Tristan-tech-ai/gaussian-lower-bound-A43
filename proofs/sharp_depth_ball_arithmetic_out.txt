@@ -11,4 +11,4 @@ c0max = (4 rho)^(-1/3)             0.441296728245954   (radius [2.85e-77 +/- 3.8
 kappa = sqrt(c0max)/4              0.166075421165723   (radius [7.51e-78 +/- 4.72e-81])
 kappa > 0.1660: True
 delta_inf = 2 c0^(3/2) sqrt(rho) at c0 = c0max equals 1: 1.00000000000000
-CHECK q1796: ALL THREE STATEMENTS HOLD
+CHECK sharp_depth: ALL THREE STATEMENTS HOLD
